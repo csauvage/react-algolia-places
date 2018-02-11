@@ -1,0 +1,29 @@
+{
+  "name": "react-algolia-places",
+  "version": "0.1.0",
+  "description": "A simple but powerful React.js wrapper around fantastic Algolia's place !",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "echo \"Error: the demo file is missing\" && exit 1",
+    "lint": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csauvage/react-algolia-places.git"
+  },
+  "keywords": [
+    "Algolia",
+    "Places",
+    "React",
+    "Geolocation",
+    "Addresses",
+    "POI"
+  ],
+  "author": "Clément Sauvage <hello+npm@clementsauvage.me> (https://clementsauvage.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csauvage/react-algolia-places/issues"
+  },
+  "homepage": "https://github.com/csauvage/react-algolia-places#readme"
+}
