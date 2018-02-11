@@ -1,7 +1,3 @@
-How to contribute
-Steps to submit a PR
-How to raise issues
-
 # react-algolia-places
 
 A simple but powerful React.js wrapper around fantastic Algolia's place !
@@ -66,8 +62,3 @@ Our test is based on Airbnb's Enzyme, JEST and Jasime test suite, to run them us
 
 Support other [Algolia's place options](https://community.algolia.com/places/documentation.html#options) and [Events](https://community.algolia.com/places/documentation.html#events)
 Write Tests
-
-
-## Companies which use it :
-
-- **Les Tontons Livreurs** - #1 On demand moving company !
