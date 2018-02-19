@@ -22,7 +22,7 @@ Then import the package
     import React, {Component} from 'react'
     import ReactDOM from 'react-dom'
 
-    import {AlgoliaPlace as Place} from 'react-algolia-places'
+    import Place from 'react-algolia-places'
 
     ReactDOM.render(<Place />, document.getElementById('app'))
 
