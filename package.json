@@ -1,6 +1,6 @@
 {
   "name": "react-algolia-places",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple but powerful React.js wrapper around fantastic Algolia's place !",
   "main": "build/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "./node_modules/.bin/eslint -c .eslintrc ./src --fix",
     "build": "babel src -d build",
     "test": "jest",
-    "postbuild": "cp ./src/index.css ./build/style.css",
+    "postbuild": "cp ./src/index.css ./build/style.css && mv ./build/Place.js ./build/index.js",
     "prebuild": "rimraf ./build",
     "prepublish": "yarn build"
   },
