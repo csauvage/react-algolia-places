@@ -35,14 +35,14 @@ Then import the package
  ---|---| ---| ---|---|---
  `onChange` | function | **YES** | `false` | Fired when suggestion selected in the dropdown or hint was validated. | `true`
  `disable` | Boolean | No | `false` | enable/ disable the input | `true`
- `language` | String | No | `navigator.language` | Language used | `FR_fr`
+ `language` | String | No | `navigator.language` | 2 letters country code (ISO 3166-1 alpha-2) | `fr`
  `countries` | Array of strings | No | *no values* | Change the countries to search in. Array of two letters country codes | `['fr', 'en', 'de', 'be']`
- `type` | Array of strings | No | *no values* | Restrict the search results to a specific type. | `['city', busStop]`
+ `type` | String | No | *no values* | Restrict the search results to a specific type.  | `['city', busStop]`
  `useDeviceLocation` | Boolean | No | `false` | Ask and use the device location. | `true`
  `appId` | String | No  | *no values* | If using the authenticated API, the Application ID to use. | --
  `apiKey` | String | No | *no values* | If using the authenticated API, the API key to use. | --
 
-ℹ️ Accepted `types` :
+ℹ️ List of accepted `types` :
 - city
 - country
 - address
@@ -50,6 +50,7 @@ Then import the package
 - trainStation
 - townhall
 - airport
+
 
 ## Runnning locally
 
