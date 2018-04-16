@@ -21,6 +21,7 @@ class Places extends Component {
         
     const autocomplete = place(options);
     autocomplete.on('change', this.props.onChange);
+    autocomplete.on('suggestions', this.props.onSuggestions);
   }
     
   render() {
@@ -42,6 +43,7 @@ Places.propTypes = {
   disabled: PropTypes.bool,
   language: PropTypes.string,
   onChange: PropTypes.func.isRequired,
+  onSuggestions: PropTypes.func.isRequired,
   templates: PropTypes.object,
   type: PropTypes.oneOf(['city', 'country', 'address', 'busStop', 'trainStation', 'townhall', 'airport']),
   useDeviceLocation: PropTypes.bool,
@@ -52,7 +54,7 @@ Places.defaultProps = {
   language: navigator.language,
   useDeviceLocation: false,
   onChange: (query, rawAnswer, suggestion, suggestionIndex) => console.log(query, rawAnswer, suggestion, suggestionIndex),
-    
+  onSuggestions: (query, rawAnswer, suggestions) => console.log(query, rawAnswer, suggestions), 
 };
 
 export default Places;

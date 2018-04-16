@@ -39,6 +39,7 @@
   "dependencies": {
     "places.js": "1.x",
     "react": "15.x",
+    "react-algolia-places": "^0.1.2",
     "react-dom": "15.x"
   },
   "devDependencies": {
