@@ -20,7 +20,7 @@ class Places extends Component {
     }
         
     const autocomplete = place(options);
-    autocomplete.on('change', this.props.onChange);
+    autocomplete.on('change', (e) => this.props.onChange(e));
   }
     
   render() {
@@ -51,7 +51,7 @@ Places.defaultProps = {
   disabled: false,
   language: navigator.language,
   useDeviceLocation: false,
-  onChange: (query, rawAnswer, suggestion, suggestionIndex) => console.log(query, rawAnswer, suggestion, suggestionIndex),
+  onChange: (e) => console.log(e),
     
 };
 
