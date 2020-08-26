@@ -1,1 +1,2 @@
 - 0.1.0 : Initial commit 
+- 0.1.2 : Add placeholder support

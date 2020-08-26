@@ -28,6 +28,7 @@ class Places extends Component {
       <input
         disabled={this.props.disabled}
         ref={(input) => {this.autoCompletePlace = input;}}
+        placeholder={this.props.placeholder}
       />
     );
   }
@@ -45,6 +46,7 @@ Places.propTypes = {
   templates: PropTypes.object,
   type: PropTypes.oneOf(['city', 'country', 'address', 'busStop', 'trainStation', 'townhall', 'airport']),
   useDeviceLocation: PropTypes.bool,
+  placeholder: PropTypes.string,
 };
 
 Places.defaultProps = {
